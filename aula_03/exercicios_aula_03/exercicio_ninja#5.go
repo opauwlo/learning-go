@@ -12,7 +12,7 @@ var(
 )
 func main() {
   fmt.Println("\nExercicio 5, tipos personalizados e conversion")
-  fmt.Println("==========================================\n")
+  fmt.Println("==========================================")
   fmt.Printf("%v \t%T\n", verdade, verdade)
   fmt.Printf("%v \t%T\n", y, y)
 
