@@ -18,8 +18,8 @@ func for_star_ex() {
 }
 
 func for_star2_ex() {
-  for i:=5; i>=1; i-- {
-    for j:=1; j<=i; j++ {
+  for i:=1; i<=5; i++ {
+      for j:=1; j<=i; j++ {
       fmt.Print("*")
     }
     fmt.Print("\n")
