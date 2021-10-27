@@ -20,7 +20,6 @@ import (
 var s string = "blá blá, ĸß?→/ß→→//"
 
 func for_with_range() {
-  s := "blá blá, ĸß?→/ß→→//"
   
   for _, v := range s { // passa pela string char por char
     fmt.Printf("%v - %T - %#U - %#x\n", v, v, v, v)
@@ -40,11 +39,17 @@ func main() {
                         tipo:
                               string\n` // raw string the \n will be not interpreted
   fmt.Println(intro)
+
   fmt.Printf("tipo: %T\n", intro) // tipo dda variavel intro == string
+
   fmt.Println(intro_raw)
+
   fmt.Printf("tipo: %T\n", intro_raw) // tipo dda variavel intro == string
+
   slice_intro := []byte(intro) // qual byte representa cada char
+
   fmt.Println(slice_intro) // mostra na tela
+
   for_with_range()
   for_tradicional()
 }
